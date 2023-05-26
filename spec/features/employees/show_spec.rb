@@ -77,7 +77,6 @@ RSpec.describe '/employees/:id' do
         end
 
         visit "/employees/#{emp_2.id}"
-        save_and_open_page
         within "#old-tick-#{emp_2.id}" do
         expect(page).to have_content("Oldest Ticket: #{ticket_2.subject}")
         expect(page).to_not have_content("Oldest Ticket: #{ticket_3.subject}")

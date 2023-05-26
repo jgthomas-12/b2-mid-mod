@@ -8,6 +8,7 @@ class Employee < ApplicationRecord
   end
 
   def oldest_ticket
+    # require 'pry'; binding.pry
     tickets.order(age: :desc).limit(1).pluck(:subject)
   end
 
