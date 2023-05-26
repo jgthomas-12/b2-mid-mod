@@ -4,7 +4,15 @@
 <p>Oldest Ticket: <%= @employee.oldest_ticket.first %></p>
 </div>
 
-
+<div id="tickets-<%= @employee.id %>">
 <% @employee.ticket_order.each do |ticket| %>
   <p><%= ticket.subject %></p>
+<% end %>
+</div>
+
+<h3>Add Ticket to Employee</h3>
+<%= form_with url: "/employees/#{@employee.id}/employee_tickets", local: true, method: :post do |f| %>
+  <%= f.label :ticket_id, "Ticket" %>
+  <%= f.text_field :ticket_id %>
+  <%= f.submit "Submit" %>
 <% end %>

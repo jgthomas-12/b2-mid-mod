@@ -3,13 +3,13 @@
 
 Read user stories very carefully.
 
-Fork and clone repo. Run the setup tasks: 
+Fork and clone repo. Run the setup tasks:
 ```bash
 bundle install
 rails db:{drop,create,migrate,seed}
 ```
 
-When you first run `bundle exec rspec`, you should have 2 passing tests. 
+When you first run `bundle exec rspec`, you should have 2 passing tests.
 
 When time is up, submit pull request.
 
@@ -31,11 +31,11 @@ We are creating an application to track departments, employees and tickets.
 
 ## Instructions
 
-- You will need to create any missing migrations. 
-- You do not need to test for validations, but you can if you want to practice. 
-- Your test coverage should be > 98% for features, and 100% for models. 
+- You will need to create any missing migrations.
+- You do not need to test for validations, but you can if you want to practice.
+- Your test coverage should be > 98% for features, and 100% for models.
 - Time-box yourself to 3 hours maximum.
-- Complete the relationships described *first*, then move onto the user stories below. 
+- Complete the relationships described *first*, then move onto the user stories below.
 
 ## User Stories
 
